@@ -30,10 +30,47 @@
 // };
 
 
+// import axios from "axios";
+
+// const API = axios.create({
+//   baseURL: "http://localhost:5000/api",
+//   withCredentials: true,
+// });
+
+// API.interceptors.request.use((config) => {
+//   const token = localStorage.getItem("token");
+
+//   if (token) {
+//     config.headers.Authorization = `Bearer ${token}`;
+//   }
+
+//   return config;
+// });
+
+// export default {
+//   login(handle) {
+//     return API.post("/user/login", { handle });
+//   },
+
+//   getCurrentUser() {
+//     return API.get("/user/me");
+//   },
+
+//   updateBookmarks(bookmarks) {
+//     return API.put("/user/bookmarks", { bookmarks });
+//   },
+
+//   updateSolved(solved) {
+//     return API.put("/user/solved", { solved });
+//   },
+// };
+
+
+
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://codetrack-ooq5.onrender.com/api",
   withCredentials: true,
 });
 
